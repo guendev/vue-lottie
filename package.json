@@ -15,6 +15,14 @@
       "require": "./dist/index.umd.js"
     }
   },
+  "keywords": [
+    "lottiefiles",
+    "lottie",
+    "vue3"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "lottie-web": "^5.9.4",
     "vue": "^3.2.25"
