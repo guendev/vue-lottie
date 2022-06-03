@@ -1,20 +1,23 @@
 {
-  "name": "@nguyenshort/vue-lottiefiles",
-  "version": "0.0.1",
+  "name": "@nguyenshort/vue-lottie",
+  "description": "Lottie player wrapper for Vue 3",
+  "version": "0.0.8",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
-  "files": ["dist"],
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenshort/vue-lottie"
   },
+  "bugs": {
+    "url": "https://github.com/nguyenshort/vue-lottie/issues",
+    "email": "nguyenshort@gmail.com"
+  },
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "lottiefiles",
     "lottie",
