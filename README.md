@@ -1,5 +1,6 @@
 # Vue 3 Lottie Animation Player
 
+![Alt Text](https://raw.githubusercontent.com/nguyenshort/vue-lottie/master/demo.gif)
 
 ## Installation
 ```
