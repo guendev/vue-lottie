@@ -9,44 +9,25 @@ import type { CSSProperties } from 'vue'
 import lottie, {AnimationItem} from "lottie-web"
 
 
-const props = defineProps( {
-  name: {
-    type: String,
-    default: () => "lottie-" + Math.random()
-  },
-  width: {
-    type: [String, Number],
-    default: () => "200px"
-  },
-  height: {
-    type: [String, Number],
-    default: () => "200px"
-  },
-  background: {
-    type: String,
-    default: "transparent"
-  },
-
-  loop: {
-    type: [Boolean, Number],
-    default: () => false
-  },
-  autoplay: {
-    type: Boolean,
-    default: () => true
-  },
-  renderer: {
-    type: String,
-    default: 'svg'
-  },
-  path: {
-    type: String,
-    required: true
-  },
-  animationData: {
-    type: Object,
-    default: () => null
-  }
+type Props = {
+  name?: string
+  width?: string | number
+  height?: string | number
+  background?: string
+  loop?: number | boolean
+  autoplay?: boolean
+  renderer?: string
+  path: string
+  animationData?: object
+}
+const props = withDefaults(defineProps<Props>(), {
+  name: "lottie-" + Math.random(),
+  width: "200px",
+  height: "200px",
+  background: "transparent",
+  loop: false,
+  autoplay: true,
+  renderer: 'svg'
 })
 
 const emit = defineEmits<{
